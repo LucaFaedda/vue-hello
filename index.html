@@ -22,8 +22,16 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <h2 class="text-danger">Buon Natale  {{ name }} {{ surname }} !!!!</h2>
-                
+                <div class="col-6">
+                    <h2 :class="class_style">Buon Natale  {{ name }} {{ surname }} !!!!</h2>
+
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 d-flex flex-column ">
+                    <button v-on:click="carlinoNatale" :class="btn_class">Show Me!!!</button>
+                    <img src="./img/carlino.jpg" alt="carlino" v-if="carlino" id="carlinoNatale " class="mt-5 w-50">
+                </div>
             </div>
         </div>
 
