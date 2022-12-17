@@ -14,16 +14,19 @@
     <div id="app">
         <div class="container">
             <div class="row mt-5">
-                <div class="col-6 ">
+                <div class="col-4">
                     <input type="text" class="form-control" placeholder="Inserisci il tuo nome" v-model="name">
                 </div>
-                <div class="col-6 ">
+                <div class="col-4">
                     <input type="text" class="form-control  bg-primary.bg-gradient" placeholder="Inserisci il tuo cognome" v-model="surname">
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-success" @click="welcome">Saluta</button>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-6">
-                    <h2 :class="class_style">Buon Natale  {{ name }} {{ surname }} !!!!</h2>
+                    <h2 :class="class_style">Buon Natale <span>{{ name_surname }}</span>  !!!!</h2>
 
                 </div>
             </div>
