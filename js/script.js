@@ -6,7 +6,8 @@ const {
 createApp({
     data(){
         return{
-            message: 'Hello Vue'
+            name: '',
+            surname: ''
         }
     }
 
