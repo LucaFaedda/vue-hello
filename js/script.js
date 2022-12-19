@@ -12,6 +12,7 @@ createApp({
             name: null,
             surname: null,
             name_surname: null,
+            buonNatale: 'Buon Natale',
             class_style: 'text-danger',
             btn_class: "btn-primary btn",
             carlino: false,
